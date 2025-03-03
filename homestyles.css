@@ -23,7 +23,13 @@
 .custom-navbar .nav-link {
     color: white !important; /* Ensures text is visible */
 }
+.tring-logo{
+    padding-left: 20px;
+    width: 150px;
+    height: 32.845191955566406px;
+    gap: 10px;
 
+}
 
 .background{
     background: url('./Images/HomePage.png');
@@ -157,9 +163,9 @@ Limit the card height dynamically */
 .cards {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: center;*
     /*transition: transform 0.5s ease-in-out;
-    width: calc(400px * 5 + 20px * 4);  Ensure it fits all cards */
+    width: calc(400px * 5 + 20px * 4);  /*Ensure it fits all cards */
 }
 
 /* Single card styling */
@@ -170,6 +176,8 @@ Limit the card height dynamically */
     padding: 10px;
     margin: 0;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     box-sizing: border-box; /* Fix unwanted gaps */
@@ -319,7 +327,6 @@ Limit the card height dynamically */
     margin: 0;
 }
 
-/* Industries and Services Styling*/
 /* Industries and Services Styling */
 .industries-services {
     padding: 50px 80px;
