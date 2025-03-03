@@ -186,7 +186,7 @@
 
 </section>
 
-<!--Industries and Services-->
+<!-- Industries and Services -->
 <section class="industries-services" id="industries-services">
     <div class="container">
         <h6 class="subheading">Empowering Solutions</h6>
@@ -197,27 +197,44 @@
 
         <!-- Tabs -->
         <div class="tabs">
-            <button class="tab active">Industries</button>
-            <button class="tab">Services</button>
+            <button class="tab active" data-target="industry-list">Industries</button>
+            <button class="tab" data-target="service-list">Services</button>
         </div>
 
-        <!-- Content List -->
-        <div class="industry-list">
+        <!-- Industry List -->
+        <div class="industry-list tab-content active">
             <div class="industry-item">
                 <h3>Streaming</h3>
-                <p>Our OTT Platform offers a comprehensive solution for content creators and distributors to deliver high-quality streaming experiences. With advanced fe...</p>
+                <p>Our OTT Platform offers a comprehensive solution for content creators and distributors to deliver high-quality streaming experiences...</p>
             </div>
             <div class="industry-item">
                 <h3>E-Commerce</h3>
-                <p>Empowering online businesses with cutting-edge technologies for personalized shopping experiences, streamlined operations, and secure pay...</p>
+                <p>Empowering online businesses with cutting-edge technologies for personalized shopping experiences, streamlined operations...</p>
             </div>
             <div class="industry-item">
                 <h3>FinTech</h3>
-                <p>Revolutionizing financial services through innovative platforms that enhance security, automate workflows, and deliver actionable insights.</p>
+                <p>Revolutionizing financial services through innovative platforms that enhance security, automate workflows, and deliver insights.</p>
+            </div>
+        </div>
+
+        <!-- Services List (Initially Hidden) -->
+        <div class="service-list tab-content">
+            <div class="service-item">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud infrastructure that ensures security, reliability, and seamless integration with modern applications.</p>
+            </div>
+            <div class="service-item">
+                <h3>AI & Machine Learning</h3>
+                <p>Leverage AI-driven insights to optimize operations, improve decision-making, and enhance user experience.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cybersecurity</h3>
+                <p>Robust security solutions to protect your data, prevent breaches, and ensure compliance with industry regulations.</p>
             </div>
         </div>
     </div>
 </section>
+
 
 <!--Client Success Stories-->
 <section class="client-stories" id="client-stories">

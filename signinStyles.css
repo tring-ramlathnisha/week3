@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2e2e;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.tring-logo {
+    position: absolute;
+    top:40px;
+    left:40px;
+    width: 150px;
+}
+
+/* Login Box */
+.login-box {
+    width: 467px;
+    height: 566px;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.inactive {
+    background: #444;
+    color: #888;
+}
+
+.active {
+    background: #f5a623;
+    color: #fff;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+}
+
+label span {
+    color: red;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#togglePassword i {
+    fill: rgba(254, 254, 254, 1) !important;
+}
+
+
+/* Remember me & Forgot Password */
+.remember-forgot {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.remember-forgot input[type="checkbox"] {
+    width:14px;
+    height:14px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.remember-forgot a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    padding-left: 140px;
+}
+
+
+/* Submit Button */
+.submit-btn {
+    padding: 10px;
+    border: none;
+    background: #f5a623;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #d88c1f;
+}
+
+/* OR Divider */
+.or-divider {
+    text-align: center;
+    margin: 15px 0;
+    color: #888;
+}
+
+/* Google Sign-in Button */
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.google-signin img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/* Sign Up Text */
+.signup-text {
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #f5a623;
+    text-decoration: none;
+}
+
+/* Right Section (Background Image) */
+.image-section {
+    width: 50%;
+    background: url('./Images/Signin_background.png') no-repeat center center/cover;
+    height: 100vh;
+}
+
+

@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    height: 110vh;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    position:relative;
+    background: #1a1a1a;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tring-logo {
+    position:absolute;
+    top: 15px;
+    left:40px;
+    width: 120px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 466px;
+    max-height: 942px;
+    margin-top: 20px;
+}
+
+.checkbox-group,
+.radio-container{
+    display: flex;
+    align-items: center;
+    gap:4px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    width:14px;
+    height:14px;
+    accent-color: white;
+    cursor: pointer;
+}
+.checkbox-group label,
+.radio-container label {
+    color:white;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+.terms {
+    color: #f5a623; /* Style for Terms and Privacy Policy */
+    cursor: pointer;
+}
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap:0px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.inactive {
+    background: #444;
+    color: #888;
+}
+
+.active {
+    background: #f5a623;
+    color: #fff;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Phone Field */
+.phone-field {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-field select {
+    width: 25%;
+}
+
+.phone-field input {
+    width: 75%;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #f5a623;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background: #d88c1f;
+}
+
+/* OR Divider */
+.or-divider {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+/* Google Sign-In */
+.google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.google-signin img {
+    width: 20px;
+}
+
+/* Sign-In Link */
+.signin-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.signin-text a {
+    color: #f5a623;
+    text-decoration: none;
+}
+
+/* Right Section */
+.image-section {
+    width: 50%;
+    background: url('./Images/Signup.png') no-repeat center center;
+    background-size: cover;
+}
