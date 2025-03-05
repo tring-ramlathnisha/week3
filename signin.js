@@ -1,28 +1,33 @@
 // Toggle Password Visibility
 const passwordInput = document.getElementById("password");
 const togglePassword = document.getElementById("togglePassword");
+const form = document.querySelector("form");
+const emailInput = document.getElementById("email");
 
 togglePassword.addEventListener("click", () => {
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
         togglePassword.innerHTML ='<i class="fa fa-eye-slash"></i>' ; // Change to "hide" icon
-        togglePassword.style.color="rgba(254,254,254,1)";
     } else {
         passwordInput.type = "password";
         togglePassword.innerHTML = '<i class="fa fa-eye"></i>'; //change to show
-        togglePassword.style.color="rgba(254,254,254,1)";
+       
     }
+    togglePassword.style.color="rgba(254,254,254,1)";
 });
 
 // Form Validation on Submit
-const form = document.querySelector("form");
-form.addEventListener("submit", (event) => {
-    const email = document.getElementById("email").value.trim();
+submit-btn.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent default form submission
+    
+    const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
 
     if (email === "" || password === "") {
         alert("Please fill in both fields.");
-        event.preventDefault(); // Prevent form submission
+    } else {
+        alert("Login successful! Redirecting...");
+        window.location.href = "landingpage.html"; // Redirect to landing page
     }
 });
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
-    <link rel="stylesheet" href="signinStyles.css">
+    <link rel="stylesheet" href="signIn.css">
 </head>
 <body>
     <div class="container">
@@ -15,8 +15,8 @@
             <div class="login-box">
                 <div class="form-container">
                     <div class="tabs">
-                        <button  onclick="location.href='signin.html'" class="active">Sign In</button>
-                        <button onclick="location.href='signup.html'"class="inactive">Sign Up</button>
+                        <button  onclick="location.href='signIn.html'" class="active">Sign In</button>
+                        <button onclick="location.href='signUp.html'"class="inactive">Sign Up</button>
                     </div>
                     
                     <form>
@@ -35,7 +35,7 @@
                             <a href="#">Forgot Password?</a>
                         </div>
 
-                        <button type="submit" class="submit-btn"  >Submit</button>
+                        <button type="submit" class="submit-btn" onclick="location.href='landingPage.html'">Submit</button>
 
                         <div class="or-divider">OR</div>
 
@@ -43,7 +43,7 @@
                             Sign In with<img src="./Images/ic_google.png" alt="Google Icon">
                         </button>
 
-                        <p class="signup-text">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+                        <p class="signup-text">Don’t have an account? <a href="signUp.html">Sign Up</a></p>
                     </form>
                 </div>
             </div>
@@ -53,6 +53,6 @@
         <div class="image-section"></div>
     </div>
 
-    <script src="signin.js"></script>
+    <script src="signIn.js"></script>
 </body>
 </html>
